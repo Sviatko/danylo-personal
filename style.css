@@ -12,6 +12,7 @@ html {
 }
 
 #jesse {
+    display: none;
     position: fixed;
     right: 20px;
     bottom: 10px;
@@ -22,6 +23,10 @@ html {
 #jesse:hover {
     background: #242935;
     color: white;
+}
+
+.scrolled #jesse {
+    display: block;
 }
 
 @media only screen and (max-width: 1000px) {
