@@ -1,0 +1,282 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.4vw;
+    font-weight: 100;
+    scroll-behavior: smooth;
+}
+
+#jesse {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    padding: 15px 20px;
+    color: #242935;
+    border: 1px solid #242935;
+}
+#jesse:hover {
+    background: #242935;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 1.6vw;
+    }
+}
+@media only screen and (max-width: 760px) {
+    body {
+        font-size: 2vw;
+    }
+}
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 2.2vw;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+.header {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+img {
+    transition: transform 0.5s ease-in-out; /* встановлюємо анімацію для плавного зміщення */
+}
+
+img:hover {
+    transform: scale(1.05); /* збільшуємо масштаб зображення на 10% */
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+html {
+
+}
+#about {
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-top: 2rem;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -4rem;
+}
+
+.header .black-stripe {
+    height: 1rem;
+    background-color: #242935;
+    flex: 1;
+}
+
+.header .experience {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav {
+    background: #242935;
+    color: #cdcfd7;
+    padding: 2rem 0;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    all: unset;
+    padding: 1rem;
+}
+
+nav ul li:hover {
+    color: #6F96F3;
+    cursor: pointer;
+}
+
+nav ul li a {
+    transition: transform 0.5s ease-in-out; /* встановлюємо анімацію для плавного зміщення */
+}
+
+nav ul li a:hover {
+    transform: scale(1.2); /* збільшуємо масштаб зображення на 10% */
+}
+
+
+#about {
+    background: #242935;
+    color: #cdcfd7;
+}
+
+ .about-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#about .about-main .personal-photo {
+    flex: 2;
+}
+
+#about .about-main .personal-photo img {
+    width: 100%;
+}
+
+#about .about-main .personal-info {
+    flex: 3;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .about-main i {
+    width: 1.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#about .about-main .qualities {
+    flex: 2;
+}
+
+#about .about-details {
+    margin: 2rem 0;
+}
+
+#about .about-details p {
+    text-indent: 1rem;
+}
+
+#educations {
+    display: flex;
+    flex-direction: column;
+}
+
+.years {
+    font-size: 0.9rem;
+}
+
+
+#experience .main-block .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#experience .main-block h3 {
+    padding: 0.5rem 0;
+}
+
+#experience .main-block .job:not(:last-of-type) {
+    padding-bottom: 2rem;
+}
+
+#educations .main-block {
+    display: flex;
+    flex-direction: column;
+}
+
+#educations .school {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#educations h3 {
+    text-transform: uppercase;
+}
+#educations .main-block .school:not(:last-of-type) {
+    padding-bottom: 2rem;
+}
+
+#educations .school .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#educations .school .info .name {
+}
+
+#educations .school .info .position {
+}
+
+#educations .school .info .faculty {
+}
+
+#educations .school .years {
+}
+
+#skills .main-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#skills .main-block .skill {
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#skills .checked {
+    color: orange;
+}
+
+#interests .main-block p:not(:last-of-type) {
+    padding-bottom: 1rem;
+}
+#interests .main-block img:nth-last-of-type(even) {
+    float: right;
+    width: 20%;
+    padding-left: 1rem;
+}
+#interests .main-block img:nth-last-of-type(odd) {
+    float: left;
+    width: 20%;
+    padding-right: 1rem;
+}
+
+#coreCompetencies .main-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#coreCompetencies .main-block .category {
+    min-width: 20rem;
+    margin-bottom: 1rem ;
+}
+
+#coreCompetencies ul {
+    list-style-position: inside;
+}

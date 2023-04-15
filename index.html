@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Danylo Dubyniak</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danylo Dubyniak personal page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        var lastScroll = false;
+        window.addEventListener("load", () => {
+            window.addEventListener("scroll", () => {
+                if(window.scrollY > 0) {
+                    if(lastScroll === false) {
+                        document.documentElement.classList.toggle("scrolled");
+                        lastScroll = true;
+                    }
+                } else {
+                    if(lastScroll === true) {
+                        document.documentElement.classList.toggle("scrolled");
+                        lastScroll = false;
+                    }
+                }
+            })
+        });
+
+    </script>
+</head>
+<body>
+<header>
+    <div id="about">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#educations">Educations</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">interests</a></li>
+                <li><a href="#coreCompetencies">Core competencies</a></li>
+            </ul>
+        </nav>
+        <div class="about-main">
+            <div class="personal-photo">
+                <img src="img/danylo.jpg" alt="personal photo">
+            </div>
+            <div class="personal-info">
+                <h2>Danylo Dubyniak</h2>
+                <p>Developer</p>
+                <p><i class="fa-solid fa-location-dot"></i><span>Chech Republic, Brno</span></p>
+                <p><i class="fa-solid fa-phone"></i><span>+420 721 573 771</span></p>
+                <p><i class="fa-solid fa-envelope-open"></i><span><a href="mailto:danylo.dub@gmail.com">danylo.dub@gmail.com</a></span></p>
+            </div>
+            <div class="qualities">
+                <h2>Qualities</h2>
+                <p><i class="fa-solid fa-person-hiking"></i>
+                    <span>Hardworking</span>
+                </p>
+                <p><i class="fa-solid fa-rocket"></i>
+                    <span>Ready for change</span>
+                </p>
+                <p><i class="fa-solid fa-person-walking"></i>
+                    <span>Persistent</span>
+                </p>
+                <p><i class="fa-solid fa-users"></i>
+                    <span>Communicable</span>
+                </p>
+            </div>
+        </div>
+        <div class="about-details">
+            <p>I am a reliable and motivated individual who can work both independently and as part of a team. I possess
+                strong problem-solving skills and a results-oriented mindset. I am decisive and always looking for ways
+                to improve my work and deliver better outcomes. With my proactive approach, I quickly identify areas for
+                improvement and use my initiative to implement effective solutions.</p>
+            <p>I have excellent social skills and a sense of responsibility that enables me to communicate complex ideas
+                clearly and work effectively with others. I am a quick learner and always eager to expand my knowledge
+                and develop new skills.</p>
+            <p>Overall, I am a dependable and driven individual with the potential to excel in a variety of roles and
+                make a positive impact on any organization.</p>
+        </div>
+    </div>
+
+</header>
+
+<main>
+    <section id="experience">
+        <div class="header">
+            <div class="black-stripe"></div>
+            <div class="experience">Experience</div>
+            <div class="black-stripe"></div>
+        </div>
+        <div class="main-block">
+            <div class="job">
+                <div class="title">
+                    <h2>
+                        Software Developer - ABC Inc.
+                    </h2>
+                    <div class="years">
+                        September 2011 - June 2022
+                    </div>
+                </div>
+                <div class="desc">
+                    <h3>Responsibilities:</h3>
+                    <p>Worked on various software development projects for clients in C language, Java, and
+                        JavaScript.</p>
+                    <p>Developed and maintained web applications using HTML, CSS, and JavaScript, including implementing
+                        responsive design and accessibility features.</p>
+                    <p>Designed and implemented REST APIs for client-server communication using Java and Spring
+                        Framework.</p>
+                    <p>Optimized database queries and designed schemas using SQL for improved performance.</p>
+                    <p>Developed scripts in Python for automating repetitive tasks and data processing.</p>
+                    <p>Debugged and resolved technical issues for internal and external clients using various tools and
+                        techniques.</p>
+                    <p>Collaborated with cross-functional teams to deliver software projects on time and within
+                        budget.</p>
+
+                    <h3>Accomplishments:</h3>
+                    <p>Led the development of a web application for a client in the finance industry, resulting in a
+                        20%</p>
+                    <p>increase in customer engagement.</p>
+                    <p>Optimized the performance of a client's database by reducing query response times by 50%.</p>
+                    <p>Developed a Python script that automated a data processing task, saving the company 10 hours
+                        of</p>
+                    <p>manual work per week.</p>
+                    <p>Contributed to the development of an open-source JavaScript library for creating user</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="title">
+                    <h2>
+                        Software Developer - DEF Corp
+                    </h2>
+                    <div class="years">
+                        June 2022 - present
+                    </div>
+
+                </div>
+                <div class="desc">
+                    <h3>Responsibilities:</h3>
+                    <p>Develop and maintain software products for clients using C language and Java.</p>
+                    <p>Design and implement user interfaces for web applications using HTML, CSS, and JavaScript.</p>
+                    <p>Implement database schemas and optimize queries using SQL for improved performance.</p>
+                    <p>Develop scripts in Python and Bash for automating tasks and data processing.</p>
+                    <p>Collaborate with cross-functional teams to deliver software projects on time and within
+                        budget.</p>
+                    <p>Debug and resolve technical issues for internal and external clients using various tools and</p>
+                    techniques.
+
+                    <h3>Accomplishments:</h3>
+                    <p>Developed a C library for image processing, which was used in several client projects and
+                        received positive feedback.</p>
+                    <p>Improved the performance of a client's web application by implementing caching and reducing page
+                        load times by 30%.</p>
+                    <p>Developed a Bash script that automated a deployment process, saving the company 10 hours of
+                        manual work per week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="educations">
+        <div class="header">
+            <div class="black-stripe"></div>
+            <div class="experience">Educations</div>
+            <div class="black-stripe"></div>
+        </div>
+        <div class="main-block">
+            <div class="school">
+                <div class="info">
+                    <h3>
+                        High School, Luceum №94
+                    </h3>
+                    <h4></h4>
+                    <p>
+                    <p>
+                </div>
+                <div class="years">
+                    September 2011 - June 2022
+                </div>
+            </div>
+            <div class="school">
+                <div class="info">
+                    <h3>
+                        Vysoke učení technické
+                    </h3>
+                    <h4>
+                        Bachelor of science
+                    </h4>
+                    <p>
+                        Fakulta informačních technologie
+                    <p>
+                </div>
+                <div class="years">
+                    September 2011 - June 2022
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="skills">
+        <div class="header">
+            <div class="black-stripe"></div>
+            <div class="experience">Skills</div>
+            <div class="black-stripe"></div>
+        </div>
+        <div class="main-block">
+            <div class="skill">
+                <div class="name">C languages</div>
+                <div class="rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="name">Java</div>
+                <div class="rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="name">HTML</div>
+                <div class="rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="name">CSS</div>
+                <div class="rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="name">Assembly</div>
+                <div class="rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="name">Scripts</div>
+                <div class="rate">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="interests">
+        <div class="header">
+            <div class="black-stripe"></div>
+            <div class="experience">Interests</div>
+            <div class="black-stripe"></div>
+        </div>
+        <div class="main-block">
+            <img src="img/cycling.jpg" alt="cycling">
+            <p><strong>Sports:</strong> I enjoy staying active and participating in a variety of sports, including running and cycling. I
+            find that sports help me maintain a healthy work-life balance and keep me motivated and energized.</p>
+            <p><strong>Photography and Video:</strong> I have a passion for visual storytelling and enjoy capturing life's moments through
+            the lens of my camera. I have experience in both photography and video production and have created content
+            for various personal and professional projects.</p>
+            <img src="img/traveling.jpg" alt="travelin">
+            <p><strong>Traveling:</strong> Exploring new cultures and destinations is one of my favorite ways to broaden my horizons and
+            gain new perspectives. I love immersing myself in different cultures and learning about their unique
+            histories and traditions.</p>
+            <p><strong>Studying:</strong> I am a lifelong learner and enjoy taking courses and reading books to expand my knowledge and
+            skillset. I am particularly interested in topics related to business, technology, and personal development.</p>
+            <p><strong>Autosports:</strong> I have a strong fascination with autosports, including racing and off-roading. I enjoy following
+            the latest trends and developments in the industry and have attended various race.</p>
+        </div>
+    </section>
+    <section id="coreCompetencies">
+        <div class="header">
+            <div class="black-stripe"></div>
+            <div class="experience">Core Competencies</div>
+            <div class="black-stripe"></div>
+        </div>
+        <div class="main-block">
+            <div class="category">
+                <h3>Programming languages</h3>
+                <ul>
+                    <li>C languages</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Scripts</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Programming languages</h3>
+                <ul>
+                    <li>C languages</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Scripts</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Programming languages</h3>
+                <ul>
+                    <li>C languages</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Scripts</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Programming languages</h3>
+                <ul>
+                    <li>C languages</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Scripts</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Programming languages</h3>
+                <ul>
+                    <li>C languages</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Scripts</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3>Programming languages</h3>
+                <ul>
+                    <li>C languages</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Scripts</li>
+                    <li>Assembly</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<a id="jesse" href="#" title="Yo bitch!"><i class="fa-solid fa-arrow-up"></i></a>
+
+</body>
+</html>
