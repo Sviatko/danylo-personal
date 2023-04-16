@@ -8,6 +8,7 @@
 html {
     font-size: 14px;
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
 }
 
 #jesse {
@@ -39,6 +40,18 @@ header {
     flex-direction: column;
 }
 
+#menu {
+    position: fixed;
+    width: 100%;
+    background: black;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+main {
+    padding-top: 6rem;
+}
+
 
 a {
     all: unset;
@@ -65,6 +78,7 @@ html {
     display: flex;
     flex-direction: column;
 }
+
 .mobile-menu-icon {
     display: none;
 }
@@ -99,10 +113,11 @@ section {
 }
 
 nav {
-    background: #242935;
+    background: black;
     color: #cdcfd7;
-    padding: 2rem 4rem;
     width: 100%;
+    height: fit-content;
+    padding: 0 4rem;
 }
 nav ul {
     display: flex;
@@ -253,12 +268,12 @@ nav ul li a:hover {
 }
 #interests .main-block img:nth-last-of-type(even) {
     float: right;
-    width: 20rem;
+    width: 30%;
     padding-left: 1rem;
 }
 #interests .main-block img:nth-last-of-type(odd) {
     float: left;
-    width: 20rem;
+    width: 30%;
     padding-right: 1rem;
 }
 
@@ -289,7 +304,22 @@ nav ul li a:hover {
 }
 @media only screen and (max-width: 420px) {
     html {
-        font-size: 8px;
+        font-size: 12px;
+        scroll-padding-top: 4rem;
+    }
+    section {
+        padding: 1rem 1rem;
+    }
+    #menu {
+        position: fixed;
+        width: 100%;
+        background: black;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+    }
+    main {
+        padding-top: 4rem;
     }
     .mobile-menu-icon {
         display: flex;
@@ -297,7 +327,7 @@ nav ul li a:hover {
         box-sizing: border-box;
         justify-content: flex-end;
         color: #6F96F3;
-        background: #242935;
+        background: #000000;
         padding: 1rem 4.5rem;
 
     }
@@ -306,7 +336,10 @@ nav ul li a:hover {
     }
     .open nav {
         display: block;
-        width: auto;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        left: 0;
         padding: 0.5rem 4rem;
     }
     .open nav ul{
@@ -334,11 +367,13 @@ nav ul li a:hover {
 
     #about .about-main .personal-photo img {
         width: 50%;
-        border-radius: 50%;
     }
 
     #experience .main-block .title {
         flex-direction: column;
+    }
+    #interests .main-block img:nth-last-of-type(even), #interests .main-block img:nth-last-of-type(odd) {
+        width: 50%;
     }
 
 }
