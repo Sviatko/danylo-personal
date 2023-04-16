@@ -52,6 +52,11 @@ main {
     padding-top: 6rem;
 }
 
+.resume {
+    float: left;
+    color: white;
+    margin-left: 4rem;
+}
 
 a {
     all: unset;
@@ -292,10 +297,20 @@ nav ul li a:hover {
     list-style-position: inside;
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 800px) {
     html {
-        font-size: 16px;
+        font-size: 14px;
         scroll-padding-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    html {
+        font-size: 14px;
+        scroll-padding-top: 4rem;
+    }
+    .resume {
+        margin-left: 1rem;
     }
     section {
         padding: 1rem 1rem;
@@ -318,7 +333,7 @@ nav ul li a:hover {
         justify-content: flex-end;
         color: #6F96F3;
         background: #000000;
-        padding: 1rem 4.5rem;
+        padding: 1rem 1.5rem;
 
     }
     nav {
@@ -330,13 +345,13 @@ nav ul li a:hover {
         top: 4rem;
         right: 0;
         left: 0;
-        padding: 0.5rem 4rem;
+        padding: 0.5rem 1rem;
     }
     .open nav ul{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-end;
+        align-items: flex-start;
         width: auto;
     }
     .open nav ul li {
@@ -353,6 +368,7 @@ nav ul li a:hover {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        width: 100%;
     }
 
     #about .about-main .personal-photo img {
@@ -365,5 +381,10 @@ nav ul li a:hover {
     #interests .main-block img:nth-last-of-type(even), #interests .main-block img:nth-last-of-type(odd) {
         width: 50%;
     }
+}
 
+@media only screen and (max-width: 420px) {
+    html {
+        font-size: 16px;
+    }
 }
