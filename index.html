@@ -11,13 +11,13 @@
         var lastScroll = false;
         window.addEventListener("load", () => {
             window.addEventListener("scroll", () => {
-                if(window.scrollY > 0) {
-                    if(lastScroll === false) {
+                if (window.scrollY > 0) {
+                    if (lastScroll === false) {
                         document.documentElement.classList.toggle("scrolled");
                         lastScroll = true;
                     }
                 } else {
-                    if(lastScroll === true) {
+                    if (lastScroll === true) {
                         document.documentElement.classList.toggle("scrolled");
                         lastScroll = false;
                     }
@@ -25,11 +25,18 @@
             })
         });
 
+        function openMobileMenu() {
+            document.getElementById("menu")?.classList.toggle("open");
+        }
+
     </script>
 </head>
 <body>
 <header>
-    <div id="about">
+    <div id="menu" onclick="openMobileMenu()">
+        <div class="mobile-menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -40,6 +47,12 @@
                 <li><a href="#coreCompetencies">Core competencies</a></li>
             </ul>
         </nav>
+    </div>
+
+</header>
+
+<main>
+    <section id="about">
         <div class="about-main">
             <div class="personal-photo">
                 <img src="img/danylo.jpg" alt="personal photo">
@@ -49,7 +62,8 @@
                 <p>Developer</p>
                 <p><i class="fa-solid fa-location-dot"></i><span>Chech Republic, Brno</span></p>
                 <p><i class="fa-solid fa-phone"></i><span>+420 721 573 771</span></p>
-                <p><i class="fa-solid fa-envelope-open"></i><span><a href="mailto:danylo.dub@gmail.com">danylo.dub@gmail.com</a></span></p>
+                <p><i class="fa-solid fa-envelope-open"></i><span><a href="mailto:danylo.dub@gmail.com">danylo.dub@gmail.com</a></span>
+                </p>
             </div>
             <div class="qualities">
                 <h2>Qualities</h2>
@@ -78,11 +92,7 @@
             <p>Overall, I am a dependable and driven individual with the potential to excel in a variety of roles and
                 make a positive impact on any organization.</p>
         </div>
-    </div>
-
-</header>
-
-<main>
+    </section>
     <section id="experience">
         <div class="header">
             <div class="black-stripe"></div>
@@ -274,19 +284,26 @@
         </div>
         <div class="main-block">
             <img src="img/cycling.jpg" alt="cycling">
-            <p><strong>Sports:</strong> I enjoy staying active and participating in a variety of sports, including running and cycling. I
-            find that sports help me maintain a healthy work-life balance and keep me motivated and energized.</p>
-            <p><strong>Photography and Video:</strong> I have a passion for visual storytelling and enjoy capturing life's moments through
-            the lens of my camera. I have experience in both photography and video production and have created content
-            for various personal and professional projects.</p>
+            <p><strong>Sports:</strong> I enjoy staying active and participating in a variety of sports, including
+                running and cycling. I
+                find that sports help me maintain a healthy work-life balance and keep me motivated and energized.</p>
+            <p><strong>Photography and Video:</strong> I have a passion for visual storytelling and enjoy capturing
+                life's moments through
+                the lens of my camera. I have experience in both photography and video production and have created
+                content
+                for various personal and professional projects.</p>
             <img src="img/traveling.jpg" alt="travelin">
-            <p><strong>Traveling:</strong> Exploring new cultures and destinations is one of my favorite ways to broaden my horizons and
-            gain new perspectives. I love immersing myself in different cultures and learning about their unique
-            histories and traditions.</p>
-            <p><strong>Studying:</strong> I am a lifelong learner and enjoy taking courses and reading books to expand my knowledge and
-            skillset. I am particularly interested in topics related to business, technology, and personal development.</p>
-            <p><strong>Autosports:</strong> I have a strong fascination with autosports, including racing and off-roading. I enjoy following
-            the latest trends and developments in the industry and have attended various race.</p>
+            <p><strong>Traveling:</strong> Exploring new cultures and destinations is one of my favorite ways to broaden
+                my horizons and
+                gain new perspectives. I love immersing myself in different cultures and learning about their unique
+                histories and traditions.</p>
+            <p><strong>Studying:</strong> I am a lifelong learner and enjoy taking courses and reading books to expand
+                my knowledge and
+                skillset. I am particularly interested in topics related to business, technology, and personal
+                development.</p>
+            <p><strong>Autosports:</strong> I have a strong fascination with autosports, including racing and
+                off-roading. I enjoy following
+                the latest trends and developments in the industry and have attended various race.</p>
         </div>
     </section>
     <section id="coreCompetencies">
@@ -309,63 +326,52 @@
                 </ul>
             </div>
             <div class="category">
-                <h3>Programming languages</h3>
+                <h3>Development tools</h3>
                 <ul>
-                    <li>C languages</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Scripts</li>
-                    <li>Assembly</li>
+                    <li>Intellij IDEA</li>
+                    <li>Android Studio</li>
+                    <li>Visual Studio</li>
+                    <li>Git/GitHub/GitLab</li>
                 </ul>
             </div>
             <div class="category">
-                <h3>Programming languages</h3>
+                <h3>Frameworks</h3>
                 <ul>
-                    <li>C languages</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Scripts</li>
-                    <li>Assembly</li>
+                    <li>Spring</li>
+                    <li>Hibernate</li>
+                    <li>Dropwizard</li>
+                    <li>Maven</li>
                 </ul>
             </div>
             <div class="category">
-                <h3>Programming languages</h3>
+                <h3>Other skills</h3>
                 <ul>
-                    <li>C languages</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Scripts</li>
-                    <li>Assembly</li>
+                    <li>Problem-solving</li>
+                    <li>Decision making</li>
+                    <li>Public speaking</li>
+                    <li>Analytical skills</li>
+                    <li>Algorithms</li>
+                    <li>Teamwork</li>
+                    <li>Result orientation</li>
+                    <li>Responsibility Reliability</li>
                 </ul>
             </div>
             <div class="category">
-                <h3>Programming languages</h3>
+                <h3>Operating Systems</h3>
                 <ul>
-                    <li>C languages</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Scripts</li>
-                    <li>Assembly</li>
+                    <li>Microsoft Windows</li>
+                    <li>Linux</li>
+                    <li>MacOS</li>
+                    <li>MS-DOS</li>
                 </ul>
             </div>
             <div class="category">
-                <h3>Programming languages</h3>
+                <h3>Languages</h3>
                 <ul>
-                    <li>C languages</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Scripts</li>
-                    <li>Assembly</li>
+                    <li>English</li>
+                    <li>Ukrainian</li>
+                    <li>Czech</li>
+                    <li>Slovak</li>
                 </ul>
             </div>
         </div>

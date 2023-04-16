@@ -6,8 +6,7 @@
 }
 
 html {
-    font-size: 1.4vw;
-    font-weight: 300;
+    font-size: 14px;
     scroll-behavior: smooth;
 }
 
@@ -29,32 +28,15 @@ html {
     display: block;
 }
 
-@media only screen and (max-width: 1000px) {
-    body {
-        font-size: 1.6vw;
-    }
-}
-@media only screen and (max-width: 760px) {
-    body {
-        font-size: 2vw;
-    }
-}
-@media only screen and (max-width: 420px) {
-    body {
-        font-size: 2.2vw;
-    }
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     color: #333;
 }
 
-.header {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    font-weight: 600;
+header {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -78,20 +60,26 @@ h2 {
 html {
 
 }
+
 #about {
-    padding: 0 4rem;
     display: flex;
     flex-direction: column;
 }
+.mobile-menu-icon {
+    display: none;
+}
 
 section {
-    margin-top: 2rem;
-    padding: 0 4rem;
+    box-sizing: border-box;
+    padding: 1rem 4rem;
     display: flex;
     flex-direction: column;
 }
 
 .header {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,7 +101,8 @@ section {
 nav {
     background: #242935;
     color: #cdcfd7;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
+    width: 100%;
 }
 nav ul {
     display: flex;
@@ -122,7 +111,7 @@ nav ul {
 
 nav ul li {
     all: unset;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 nav ul li:hover {
@@ -144,8 +133,9 @@ nav ul li a:hover {
     color: #cdcfd7;
 }
 
- .about-main {
+#about .about-main {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
 }
@@ -168,7 +158,7 @@ nav ul li a:hover {
 #about .about-main i {
     width: 1.5rem;
     padding-right: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.8em;
 }
 
 #about .about-main .qualities {
@@ -189,7 +179,7 @@ nav ul li a:hover {
 }
 
 .years {
-    font-size: 0.9rem;
+    font-size: 0.9em;
 }
 
 
@@ -248,7 +238,8 @@ nav ul li a:hover {
 }
 
 #skills .main-block .skill {
-    min-width: 20rem;
+    min-width: 10rem;
+    padding: 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -262,12 +253,12 @@ nav ul li a:hover {
 }
 #interests .main-block img:nth-last-of-type(even) {
     float: right;
-    width: 20%;
+    width: 20rem;
     padding-left: 1rem;
 }
 #interests .main-block img:nth-last-of-type(odd) {
     float: left;
-    width: 20%;
+    width: 20rem;
     padding-right: 1rem;
 }
 
@@ -278,10 +269,76 @@ nav ul li a:hover {
 }
 
 #coreCompetencies .main-block .category {
-    min-width: 20rem;
+    min-width: 15rem;
     margin-bottom: 1rem ;
 }
 
 #coreCompetencies ul {
     list-style-position: inside;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 760px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    html {
+        font-size: 8px;
+    }
+    .mobile-menu-icon {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: flex-end;
+        color: #6F96F3;
+        background: #242935;
+        padding: 1rem 4.5rem;
+
+    }
+    nav {
+        display: none;
+    }
+    .open nav {
+        display: block;
+        width: auto;
+        padding: 0.5rem 4rem;
+    }
+    .open nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: auto;
+    }
+    .open nav ul li {
+        padding: 0.2rem 0.5rem;
+    }
+    #about .about-main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #about .about-main .personal-info {
+        padding: 1rem 0;
+    }
+    #about .about-main .personal-photo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #about .about-main .personal-photo img {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    #experience .main-block .title {
+        flex-direction: column;
+    }
+
 }
