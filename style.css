@@ -63,6 +63,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    color: #6F96F3;
+}
+
 img {
     transition: transform 0.5s ease-in-out; /* встановлюємо анімацію для плавного зміщення */
 }
@@ -259,11 +263,12 @@ nav ul li a:hover {
 
 #skills .main-block .skill {
     min-width: 10rem;
-    padding: 0 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 #skills .checked {
     color: orange;
 }
@@ -331,10 +336,14 @@ nav ul li a:hover {
         width: 100%;
         box-sizing: border-box;
         justify-content: flex-end;
-        color: #6F96F3;
+        color: white;
         background: #000000;
         padding: 1rem 1.5rem;
 
+    }
+    .mobile-menu-icon:hover {
+        color: #6F96F3;
+        cursor: pointer;
     }
     nav {
         display: none;
