@@ -400,6 +400,6 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 420px) {
     html {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
